@@ -16,7 +16,7 @@
     "explorer:dev": "npm --prefix frontend run dev",
     "explorer:test": "npm --prefix frontend test",
     "explorer": "npm run explorer:build && npm run demo:explorer",
-    "test": "node --test test/",
+    "test": "node --test test/*.test.js",
     "verify": "npm test && npm run explorer:test && npm run explorer:build && npm run demo:explorer -- --check --port 0"
   },
   "keywords": [
