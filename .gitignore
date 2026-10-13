@@ -1,0 +1,25 @@
+# Dependencies (installed with `npm run explorer:install`)
+node_modules/
+
+# Build output (recreated with `npm run explorer:build`)
+frontend/dist/
+.vite/
+coverage/
+
+# Local environment and secrets — MiniChain needs none; never commit them
+.env
+.env.*
+*.pem
+*.key
+
+# Logs and temporary files
+*.log
+npm-debug.log*
+*.tmp
+*.swp
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

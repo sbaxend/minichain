@@ -1,0 +1,38 @@
+{
+  "name": "minichain",
+  "version": "0.9.0",
+  "description": "An educational blockchain built from scratch in Node.js: proof-of-work, signed transactions, P2P gossip, a mempool, deterministic escrow contracts, and a React explorer. Fictional coins, localhost only.",
+  "type": "module",
+  "scripts": {
+    "demo:hash": "node examples/01-hashing.js",
+    "demo:chain": "node examples/02-blockchain.js",
+    "demo:mining": "node examples/03-mining.js",
+    "demo:wallets": "node examples/04-wallets.js",
+    "demo:balances": "node examples/05-balances.js",
+    "demo:network": "node examples/06-network.js",
+    "demo:explorer": "node examples/07-explorer.js",
+    "explorer:install": "npm --prefix frontend ci",
+    "explorer:build": "npm --prefix frontend run build",
+    "explorer:dev": "npm --prefix frontend run dev",
+    "explorer:test": "npm --prefix frontend test",
+    "explorer": "npm run explorer:build && npm run demo:explorer",
+    "test": "node --test test/",
+    "verify": "npm test && npm run explorer:test && npm run explorer:build && npm run demo:explorer -- --check --port 0"
+  },
+  "keywords": [
+    "blockchain",
+    "educational",
+    "proof-of-work",
+    "peer-to-peer",
+    "mempool",
+    "smart-contracts",
+    "ed25519",
+    "nodejs",
+    "react"
+  ],
+  "engines": {
+    "node": ">=20.19"
+  },
+  "license": "MIT",
+  "private": true
+}
